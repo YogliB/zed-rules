@@ -1,0 +1,1 @@
+initialize memory bank
