@@ -1,0 +1,8 @@
+{
+  "name": "zed-rules",
+  "version": "1.0.0",
+  "description": "A collection of Zed rules for various use cases.",
+  "scripts": {
+    "prepare": "cat ./rules/*.md > AGENTS.md"
+  }
+}
