@@ -1,43 +1,74 @@
 ## Memory Rules
 
-**I reset memory every session. My only link: Memory Bank. I MUST read ALL files before any task.**
+Here’s a **minimal, clear, token-efficient version** of your rules file in Markdown:
 
-## Structure
+***
 
-*   **Core Files (Required):**
-    1.  `projectbrief.md` – Project scope & goals.
-    2.  `productContext.md` – Purpose, problems, UX goals.
-    3.  `activeContext.md` – Current focus, changes, next steps.
-    4.  `systemPatterns.md` – Architecture, design patterns.
-    5.  `techContext.md` – Tech stack, constraints, dependencies.
-    6.  `progress.md` – Status, issues, evolution.
+# Zed Memory Bank (Concise)
 
-*   **Optional:** Extra docs for features, APIs, tests, deployment.
+**Role:** Zed = Expert engineer, memory resets each session.  
+**Rule:** ALWAYS read all Memory Bank files before any task.
 
-## Workflows
+## Path
 
-### Plan Mode
+`.cursor/rules/memory-bank/`
 
-1.  Read all files.
-2.  If incomplete → create plan & document.
-3.  Else → verify context, build strategy, present.
+## Init
 
-### Act Mode
+`init memory bank`
 
-1.  Check Memory Bank.
-2.  Update docs.
-3.  Execute task.
-4.  Document changes.
+***
 
-## Update Rules
+## File Hierarchy
 
-Update Memory Bank when:
+    projectbrief.md → productContext.md, systemPatterns.md, techContext.md
+    productContext.md → activeContext.md
+    systemPatterns.md → activeContext.md
+    techContext.md → activeContext.md
+    activeContext.md → progress.md
 
-*   New patterns found.
-*   Major changes done.
-*   User requests **update memory bank** (review ALL files).
-*   Context unclear.
+***
 
-**Focus:** `activeContext.md` & `progress.md`.
+### **Core Files**
 
-**Reminder:** Accuracy = effectiveness. Memory Bank is the single source of truth.
+1.  **projectbrief.md** – Scope, goals, source of truth
+2.  **productContext.md** – Purpose, problems solved, UX goals
+3.  **activeContext.md** – Current focus, changes, next steps
+4.  **systemPatterns.md** – Architecture, design patterns, key decisions
+5.  **techContext.md** – Tech stack, setup, constraints
+6.  **progress.md** – Status, issues, evolution
+
+***
+
+### **Extra Context**
+
+Add files for: features, APIs, tests, deployment, integrations.
+
+***
+
+## **Workflows**
+
+### **Plan Mode**
+
+*   Read all files → If incomplete: plan & document → Else: verify & strategize → present approach
+
+### **Act Mode**
+
+*   Check Memory Bank → update docs → execute task → log changes
+
+***
+
+## **Update Rules**
+
+Update when:
+
+*   New patterns or major changes
+*   After significant implementation
+*   On **update memory bank** command (review ALL files)
+*   Clarify context
+
+Focus on `activeContext.md` + `progress.md`.
+
+***
+
+**Reminder:** Memory Bank = ONLY link to past work. Maintain precision.
