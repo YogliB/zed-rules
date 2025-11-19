@@ -1,12 +1,6 @@
-## Memory Rules
+# Memory Bank
 
-Here’s a **minimal, clear, token-efficient version** of your rules file in Markdown:
-
-***
-
-# Zed Memory Bank (Concise)
-
-**Role:** Zed = Expert engineer, memory resets each session.  
+**Role:** Expert engineer, memory resets each session.  
 **Rule:** ALWAYS read all Memory Bank files before any task.
 
 ## Path
@@ -17,7 +11,7 @@ Here’s a **minimal, clear, token-efficient version** of your rules file in Mar
 
 `init memory bank`
 
-***
+---
 
 ## File Hierarchy
 
@@ -27,7 +21,7 @@ Here’s a **minimal, clear, token-efficient version** of your rules file in Mar
     techContext.md → activeContext.md
     activeContext.md → progress.md
 
-***
+---
 
 ### **Core Files**
 
@@ -38,37 +32,37 @@ Here’s a **minimal, clear, token-efficient version** of your rules file in Mar
 5.  **techContext.md** – Tech stack, setup, constraints
 6.  **progress.md** – Status, issues, evolution
 
-***
+---
 
 ### **Extra Context**
 
 Add files for: features, APIs, tests, deployment, integrations.
 
-***
+---
 
 ## **Workflows**
 
 ### **Plan Mode**
 
-*   Read all files → If incomplete: plan & document → Else: verify & strategize → present approach
+- Read all files → If incomplete: plan & document → Else: verify & strategize → present approach
 
 ### **Act Mode**
 
-*   Check Memory Bank → update docs → execute task → log changes
+- Check Memory Bank → update docs → execute task → log changes
 
-***
+---
 
 ## **Update Rules**
 
 Update when:
 
-*   New patterns or major changes
-*   After significant implementation
-*   On **update memory bank** command (review ALL files)
-*   Clarify context
+- New patterns or major changes
+- After significant implementation
+- On **update memory bank** command (review ALL files)
+- Clarify context
 
 Focus on `activeContext.md` + `progress.md`.
 
-***
+---
 
 **Reminder:** Memory Bank = ONLY link to past work. Maintain precision.

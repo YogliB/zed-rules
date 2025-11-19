@@ -11,23 +11,21 @@
 
 ## 🔝 Priority
 
-1. `grep` – code search  
-2. `figma` – design/UI  
-3. `fetch` – remote data  
-4. `playwright` – browser automation  
-5. `context7` – contextual analysis  
-6. `sequentialthinking` – multi-step reasoning  
+1. `gh_grep` – code search
+2. `figma` – design/UI
+3. `fetch` – remote data
+4. `playwright` – browser automation
+5. `sequentialthinking` – multi-step reasoning
 
 ---
 
 ## 📡 Tool Rules
 
-- **fetch:** HTTP GET/POST; full URL; prefer JSON; summarize large data.  
-- **figma:** Inspect layouts, tokens; sync with docs.  
-- **grep:** Precise queries; minimal snippets; no auto-commit.  
-- **playwright:** UI tests; avoid heavy crawling; summarize results.  
-- **context7:** Extract, analyze, and enrich context from text or structured data; prioritize semantic clarity; return concise insights.  
-- **sequentialthinking:** Plan → simulate → evaluate workflows.  
+- **fetch:** HTTP GET/POST; full URL; prefer JSON; summarize large data.
+- **figma:** Inspect layouts, tokens; sync with docs.
+- **gh_grep:** Precise queries; minimal snippets; no auto-commit.
+- **playwright:** UI tests; avoid heavy crawling; summarize results.
+- **sequentialthinking:** Plan → simulate → evaluate workflows.
 
 ---
 
@@ -35,7 +33,7 @@
 
 - Log MCP outputs to internal docs with **timestamp + tool + summary**.  
   Example:  
-  `[MCP: fetch | 2025-11-02 | Retrieved API spec]`  
+  `[MCP: fetch | 2025-11-02 | Retrieved API spec]`
 
 ---
 
@@ -53,11 +51,10 @@
 
 ## 🔍 Summary Table
 
-| Tool               | Role        | Use                        |
-| ------------------ | ----------  | -------------------------- |
-| fetch              | Retrieval   | JSON/docs                 |
-| figma              | Design      | Layout/tokens             |
-| grep               | Code        | Repo queries              |
-| playwright         | Automation  | UI tests                  |
-| context7           | Analysis    | Context extraction/enrich |
-| sequentialthinking | Reasoning   | Workflow planning         |
+| Tool               | Role       | Use               |
+| ------------------ | ---------- | ----------------- |
+| fetch              | Retrieval  | JSON/docs         |
+| figma              | Design     | Layout/tokens     |
+| gh_grep            | Code       | Repo queries      |
+| playwright         | Automation | UI tests          |
+| sequentialthinking | Reasoning  | Workflow planning |

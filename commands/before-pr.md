@@ -1,105 +1,37 @@
 # Before PR Command
 
-**Purpose:**
-Run this command before creating a pull request to ensure the current **feature branch** is clean and that **only the code changed in this branch** is validated and fixed.
+## Description
 
----
+Run validation checks (linting, testing, security) on the current feature branch to ensure it is clean before creating a pull request. Scopes checks to changed files only.
 
-### 🧩 Project Detection
+## Trigger
 
-The agent automatically detects the project type:
+User runs "before pr" or wants to validate the branch before creating a PR.
 
-- **UI Projects** → `package.json`
-- **Backend Python Projects** → `pyproject.toml`
+## Steps
 
----
+1. **Detect Project Type**:
+    - **UI Projects**: Look for `package.json`.
+    - **Backend Python Projects**: Look for `pyproject.toml`.
+2. **Identify Scope**:
+    - Find changed files using `git diff --name-only origin/main...HEAD`.
+    - Apply actions **only** to these files.
+3. **Execute Commands**:
+    - **UI**: Run `npm run verify` (ESLint, Prettier) and `npm run test:ci:unit:coverage`.
+    - **Backend**: Run `poetry run cybr pr` (Black, Isort, Pylint) and `poetry run bandit`.
+4. **Handle Auto-Fixes**:
+    - Apply fixes (Prettier/Black) **only** to changed files.
+    - Auto-stage successful fixes: `git add <changed-files>`.
+    - **Do not** modify unrelated files.
+5. **Result Handling**:
+    - **Success**: All checks pass for changed files.
+    - **Failure**: Stop on first error.
+    - **Legacy Issues**: Log unrelated issues but do not block if changed files are clean.
 
-### ⚙️ Commands
+## Output Format
 
-**UI Projects**
+Terminal output of the executed commands and a final success/failure status.
 
-```bash
-npm run verify
-npm run test:ci:unit:coverage
-```
+## Examples (Optional)
 
-**Backend Python Projects**
-
-```bash
-poetry run cybr pr
-poetry run bandit
-```
-
----
-
-### 🧠 Agent Behavior Rules
-
-- Run on **current feature branch**, not `main` or `master`.
-- Stop on first failure.
-- **Do not open a PR** — only validate and optionally auto-fix.
-- **Scope all actions to changed files only.**
-
-#### Determining Changed Files
-
-The agent identifies changed files using:
-
-```bash
-git diff --name-only origin/main...HEAD
-```
-
-Only these files are linted, formatted, tested, or fixed.
-
-#### Fixing and Staging
-
-- Auto-fixes (e.g. Prettier, Black, isort) are **applied only to changed files**.
-- After successful fixes, the agent **auto-stages them**:
-
-  ```bash
-  git add <changed-files>
-  ```
-
-- No unrelated files should be modified or committed.
-
-#### Test & Coverage Scope
-
-- Unit tests must pass for all test suites.
-- Coverage thresholds apply **only to tests related to changed code**.
-- Global coverage regressions trigger a **warning**, not a failure.
-
-#### Handling Pre-existing Issues
-
-- If lint or security tools detect unrelated issues:
-
-  - **Log them**, do not fix.
-  - Mark them as “legacy issues.”
-  - Continue if changed files pass all checks.
-
----
-
-### 🧾 Command Details
-
-**UI Projects**
-
-- `npm run verify`: ESLint, Prettier, Stylelint
-- `npm run test:ci:unit:coverage`: Unit tests + coverage report
-
-**Backend Python Projects**
-
-- `poetry run cybr pr`: pre-commit checks (black, isort, pylint, etc.)
-- `poetry run bandit`: security scanning
-
----
-
-### ✅ Expected Results
-
-**UI Projects**
-
-- ESLint, Stylelint, Prettier pass for changed files
-- Tests and coverage succeed
-- Console clean of new warnings or errors
-
-**Backend Python Projects**
-
-- All pre-commit checks pass for changed files
-- High code quality and consistent style
-- No new vulnerabilities introduced
+None provided.

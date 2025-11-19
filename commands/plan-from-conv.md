@@ -1,47 +1,51 @@
-## Purpose
+# Plan from Conversation Command
+
+## Description
 
 Convert the active conversation (tasks, findings, and conclusions) into a clear planning prompt for the agent — suitable for Plan Mode execution.
 
-## Behavior
+## Trigger
 
-- Uses **entire current conversation history** as input.
-- Produces **only** the planning prompt (no plan execution).
-- Output should be **ready to paste** into Plan Mode.
+User asks to create a plan based on the current discussion.
 
-## Output Requirements
+## Steps
 
-- **Title** – concise summary of the conversation’s main goal or task.
-- **Context** – distilled key details, findings, or decisions from the discussion.
-- **Objective** – what the plan should achieve next.
-- **Constraints** – any known limitations, assumptions, or rules.
-- **Deliverables** – expected outputs or artifacts from the plan.
+1. **Analyze History**: Review the entire conversation for goals, tasks, findings, and decisions.
+2. **Distill**: Extract key details and ignore irrelevant chatter.
+3. **Format**: Create a structured prompt with:
+    - **Title**: Concise summary.
+    - **Context**: Key background details.
+    - **Objective**: What to achieve.
+    - **Constraints**: Limitations or rules.
+    - **Deliverables**: Expected outputs.
+4. **Output Only**: Do NOT execute the plan. Just provide the prompt.
 
-## Example Output
+## Output Format
 
-```
+Markdown block ready to be pasted into Plan Mode.
+
+## Examples (Optional)
+
+```markdown
 # Task
 
-Investigate why API responses are missing `userRole` in production.
+Investigate why API responses are missing `userRole`.
 
 # Context
 
-- Bug reproduced via `/users/me` endpoint.
-- Local works, production fails.
-- Logs show null value returned from DB query.
-- Root cause suspected: missing join in ORM model.
+- Bug reproduced in prod, works locally.
+- Logs show null DB value.
 
 # Objective
 
-Plan the fix and validation steps to ensure `userRole` is always included.
+Plan fix and validation steps.
 
 # Constraints
 
-- Avoid schema migrations.
-- Use minimal ORM changes.
+- Minimal ORM changes.
 
 # Deliverables
 
-- Implementation strategy.
+- Fix implementation.
 - Verification steps.
-- Risk assessment.
 ```
