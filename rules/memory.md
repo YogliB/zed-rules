@@ -5,11 +5,15 @@
 
 ## Path
 
-`.cursor/rules/memory-bank/`
+`memory-bank/`
 
 ## Init
 
 `init memory bank`
+
+## Update
+
+`update memory bank`
 
 ---
 
