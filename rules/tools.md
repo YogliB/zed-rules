@@ -15,7 +15,8 @@
 2. `figma` – design/UI
 3. `fetch` – remote data
 4. `playwright` – browser automation
-5. `sequentialthinking` – multi-step reasoning
+5. `serena` – semantic code editing
+6. `sequentialthinking` – multi-step reasoning
 
 ---
 
@@ -25,6 +26,7 @@
 - **figma:** Inspect layouts, tokens; sync with docs.
 - **gh_grep:** Precise queries; minimal snippets; no auto-commit.
 - **playwright:** UI tests; avoid heavy crawling; summarize results.
+- **serena:** Use for semantic code retrieval/editing; symbol-level operations; ideal for large codebases.
 - **sequentialthinking:** Plan → simulate → evaluate workflows.
 
 ---
@@ -51,10 +53,11 @@
 
 ## 🔍 Summary Table
 
-| Tool               | Role       | Use               |
-| ------------------ | ---------- | ----------------- |
-| fetch              | Retrieval  | JSON/docs         |
-| figma              | Design     | Layout/tokens     |
-| gh_grep            | Code       | Repo queries      |
-| playwright         | Automation | UI tests          |
-| sequentialthinking | Reasoning  | Workflow planning |
+| Tool               | Role       | Use                     |
+| ------------------ | ---------- | ----------------------- |
+| fetch              | Retrieval  | JSON/docs              |
+| figma              | Design     | Layout/tokens          |
+| gh_grep            | Code       | Repo queries           |
+| playwright         | Automation | UI tests               |
+| serena             | Code Agent | Semantic code editing  |
+| sequentialthinking | Reasoning  | Workflow planning      |
