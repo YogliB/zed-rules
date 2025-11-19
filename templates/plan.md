@@ -36,12 +36,20 @@
 - [ ] **Step 2: [Name]**
     - [ ] Task 2.1
 
-## Testing / Docs / Acceptance
+## Docs
+
+- [ ] [Document 1]: [File path or description]
+- [ ] [Document 2]: [File path or description]
+
+## Testing
 
 - [ ] Unit tests
 - [ ] Integration tests
-- [ ] Documentation updated
-- [ ] Acceptance criteria met
+
+## Acceptance
+
+- [ ] [Acceptance Criterion 1]
+- [ ] [Acceptance Criterion 2]
 
 ## Fallback Plan
 
