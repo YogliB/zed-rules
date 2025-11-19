@@ -10,12 +10,7 @@ User runs `update memory bank`.
 
 ## Steps
 
-1. **Review**: specific changes in the session or recent history.
-2. **Update Files**:
-    - `activeContext.md`: Update current focus and recent changes.
-    - `progress.md`: Update status and completed items.
-    - `systemPatterns.md` / `techContext.md`: Update if architecture or tech stack changed.
-3. **Verify**: Ensure links between files are maintained.
+Use the serena MCP to update the memory bank with the latest information.
 
 ## Output Format
 
