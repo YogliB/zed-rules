@@ -1,8 +1,23 @@
 {
-  "name": "zed-rules",
-  "version": "1.0.0",
-  "description": "A collection of Zed rules for various use cases.",
-  "scripts": {
-    "prepare": "cat ./rules/*.md > AGENTS.md"
-  }
+	"name": "zed-rules",
+	"version": "1.0.0",
+	"description": "A collection of Zed rules for various use cases.",
+	"scripts": {
+		"prepare": "husky",
+		"format": "prettier --write .",
+		"build": "cat ./rules/*.md > AGENTS.md"
+	},
+	"prettier": {
+		"useTabs": true,
+		"tabWidth": 4,
+		"singleQuote": true
+	},
+	"lint-staged": {
+		"*": "prettier --write --ignore-unknown"
+	},
+	"devDependencies": {
+		"husky": "9.1.7",
+		"lint-staged": "16.2.7",
+		"prettier": "3.6.2"
+	}
 }
