@@ -2,25 +2,54 @@
 
 ## Description
 
-Write clear, structured, and accurate technical docs (APIs, architecture, guides) or review existing ones.
+Create or review technical documentation (APIs, architecture, guides) that is clear, concise, and developer-friendly.
 
 ## Trigger
 
-User asks for documentation help, creation, or review.
+When the user requests:
+
+- Writing new documentation
+- Reviewing existing documentation
+- Improving existing docs
 
 ## Steps
 
-1. **Identify Task**: Determine if writing new docs or reviewing existing ones.
-2. **Draft/Review**:
-    - If writing: Use **Markdown** formatting with proper headings, lists, and code blocks. Ensure conciseness, readability, and a developer-friendly tone.
-    - If reviewing: Assess clarity, consistency, and correctness.
-3. **Refine**: Follow best practices for technical writing (active voice, short sentences, precise terminology).
-4. **Finalize**: Ensure the output is easy to understand, technically correct, and well-organized.
+1. Identify Task  
+   Determine if the request is for new documentation or a review.
+
+2. Draft or Review
+   - If writing:
+     - Use Markdown with headings, lists, and code blocks.
+     - Keep content short, clear, and structured.
+     - Use a friendly tone for new developers and agents.
+   - If reviewing:
+     - Check for clarity, accuracy, consistency, and readability.
+
+3. Refine  
+   Apply best practices:
+   - Use active voice and short sentences
+   - Ensure precise terminology
+   - Avoid jargon or explain it
+   - Remove duplication and unnecessary complexity
+
+4. Finalize  
+   Ensure the output is:
+   - Easy to understand
+   - Technically correct
+   - Well-organized
+   - Includes minimal, relevant examples
 
 ## Output Format
 
-Markdown documentation or a review report.
+- Markdown documentation or review report
 
-## Examples (Optional)
+### Best Practices
 
-None provided.
+- Start with context (what and why)
+- Use consistent structure and logical flow
+- Add quick-start sections for beginners
+- Link related resources instead of duplicating content
+- Use tables for parameters or comparisons
+- Keep sections scannable with bullets and short paragraphs
+- Indicate version or last update date
+- Ensure readability for non-native speakers
