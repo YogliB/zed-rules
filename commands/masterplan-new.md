@@ -16,7 +16,7 @@ User starts a complex feature, multi-repo task, or high-risk change.
     - Fill in all sections: Overview, Implementation Status, Detailed PRs, Deployment Strategy, Success Criteria.
 4. **Testing Policy**: Ensure tests are integrated with related changes (no standalone test PRs).
 5. **Review**: Validate precise paths, snippets, and explicit dependencies.
-6. **Save**: Write to `.cursor/plans/[username]/in-progress/[feature-name].md`.
+6. **Save**: Write to `docs/plans/in-progress/[feature-name].md`.
 
 ## Output Format
 
