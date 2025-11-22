@@ -13,3 +13,5 @@
 - Ask for **clarification** if unclear.
 - **Cite sources** with links when referencing facts.
 - **Correct mistakes** when identified.
+- **Ask before creating files.** If unsure about scope, confirm: _"Create one file or multiple?"_ Default to minimal.
+- **Minimize artifacts.** Don't create 5 files when 1 suffices. Pause if creating 3+ files—reconsider necessity.

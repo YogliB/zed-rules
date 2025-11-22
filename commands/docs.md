@@ -18,26 +18,26 @@ When the user requests:
    Determine if the request is for new documentation or a review.
 
 2. Draft or Review
-   - If writing:
-     - Use Markdown with headings, lists, and code blocks.
-     - Keep content short, clear, and structured.
-     - Use a friendly tone for new developers and agents.
-   - If reviewing:
-     - Check for clarity, accuracy, consistency, and readability.
+    - If writing:
+        - Use Markdown with headings, lists, and code blocks.
+        - Keep content short, clear, and structured.
+        - Use a friendly tone for new developers and agents.
+    - If reviewing:
+        - Check for clarity, accuracy, consistency, and readability.
 
 3. Refine  
    Apply best practices:
-   - Use active voice and short sentences
-   - Ensure precise terminology
-   - Avoid jargon or explain it
-   - Remove duplication and unnecessary complexity
+    - Use active voice and short sentences
+    - Ensure precise terminology
+    - Avoid jargon or explain it
+    - Remove duplication and unnecessary complexity
 
 4. Finalize  
    Ensure the output is:
-   - Easy to understand
-   - Technically correct
-   - Well-organized
-   - Includes minimal, relevant examples
+    - Easy to understand
+    - Technically correct
+    - Well-organized
+    - Includes minimal, relevant examples
 
 ## Output Format
 

@@ -68,28 +68,36 @@ zed-rules/
 Rules define AI behavior and are combined into `AGENTS.md`. Located in `rules/`:
 
 ### `coding.md`
+
 Clean code principles and naming conventions:
+
 - Comment-free code philosophy
 - Intention-revealing names
 - Small, focused, testable functions
 - Simple control flow (early returns)
 
 ### `core.md`
+
 Communication style and general behavior:
+
 - Natural, conversational tone
 - No unnecessary apologies
 - Fact validation with sources
 - Direct, concise responses
 
 ### `memory.md`
+
 Memory bank system for context management:
+
 - Structured documentation hierarchy
 - Session-independent context
 - Plan and Act mode workflows
 - Update rules and triggers
 
 ### `tools.md`
+
 MCP (Model Context Protocol) tools configuration:
+
 - Tool priority hierarchy
 - Usage guidelines per tool
 - Error handling patterns
