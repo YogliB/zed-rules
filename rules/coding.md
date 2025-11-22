@@ -12,6 +12,7 @@ Code must **explain itself** — no comments.
 - Express intent via **types & tests**.
 - Document design in **Markdown**, not code.
 - Follow **Clean Code**: clarity > cleverness.
+- Don't over-engineer; YAGNI.
 
 ### Checklist
 
