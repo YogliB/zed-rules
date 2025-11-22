@@ -10,7 +10,7 @@ User runs `update memory bank`.
 
 ## Steps
 
-Use the serena MCP to update the memory bank with the latest information.
+Update the memory bank.
 
 ## Output Format
 

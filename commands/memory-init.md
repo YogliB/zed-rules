@@ -10,7 +10,7 @@ User runs `init memory bank`.
 
 ## Steps
 
-Use the serena MCP to create the initial memory bank structure.
+Initialize the memory bank.
 
 ## Output Format
 
