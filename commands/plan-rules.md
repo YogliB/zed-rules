@@ -18,11 +18,12 @@ User asks about planning rules or during plan validation.
 5. **Template Usage**: Read and enforce the standard planning template at `templates/plan.md`.
 6. **Agent Rules**: 95% TODO coverage, consistent Markdown, no VCS steps in plan.
 7. **Storage Instruction**: All finalized plans must be written to `docs/plans/`.
+8. **Completion Action**: Suggest deleting the plan after successful execution.
 
 ## Output Format
 
 Text describing the rules or the Planning Template from `templates/plan.md`.
 
-## Examples (Optional)
+## Examples
 
 See `templates/plan.md` for the structure.
