@@ -1,8 +1,8 @@
-# New PR Command
+# New Draft PR Command
 
 ## Description
 
-Create a pull request from the current Git branch using the GitHub CLI, following team conventions and ensuring commits comply with the Conventional Commit format.
+Create a draft pull request from the current Git branch using the GitHub CLI, following team conventions and ensuring commits comply with the Conventional Commit format.
 
 ## Trigger
 
@@ -22,7 +22,7 @@ User wants to create a pull request.
 6. **Generate Content**:
     - Title: `CP-xxxxx: <conventional commit message>`
     - Body: Concise, bullet points, Jira link.
-7. **Execute**: Run `gh pr create --web ...`
+7. **Execute**: Run `gh pr create --draft --web ...`
 8. **Fallback**: If no template, use minimal bulleted body (Context, Changes, Jira link).
 
 ## Output Format
@@ -33,6 +33,7 @@ Terminal command execution and success message.
 
 ```bash
 gh pr create \
+  --draft \
   --title "CP-1234: feat(api) add auth" \
   --body-file .github/PULL_REQUEST_TEMPLATE.md \
   --web
