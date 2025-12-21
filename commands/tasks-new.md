@@ -24,6 +24,7 @@ When the user requests to create tasks for a complex or high-priority request re
 4. Use backlog task edit to add all fields: description, plan, acceptance criteria, priority, notes, assignee, labels.
 5. If dependencies exist between tasks, set them using --depends-on.
 6. Confirm creation by listing the task IDs, titles, and all filled fields.
+7. Do not start implementing the tasks until explicit approval from the user.
 
 ## Output Format
 
