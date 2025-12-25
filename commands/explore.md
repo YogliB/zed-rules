@@ -15,6 +15,7 @@ User wants to explore a new idea or feature.
 3. **Research**: Use MCP tools (`gh_grep`, `fetch`) to find similar patterns/examples.
 4. **Analyze feasibility**: Consider technical, design, and product constraints.
 5. **Document findings**: Capture insights, trade-offs, and next steps.
+6. **Avoid side effects**: Never produce side effect docs unless requested.
 
 ## Output Format
 
